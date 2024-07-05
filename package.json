@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "dependencies": {
-    "@dberezin10/packages": "^1.0.4",
+    "@dberezin10/packages": "^1.0.5",
     "@packages/shared": "https://github.com/dberezin10/module-federation#main",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
