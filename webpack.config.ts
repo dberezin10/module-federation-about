@@ -54,7 +54,10 @@ export default (env: IEnvVariables) => {
                 },
                 {
                     test: /\.(ts|tsx)$/,
-                    include: /@dberezin10\/packages\/shared/,
+                    include: [
+                        path.resolve(__dirname, 'src'), // Включаем обработку файлов из текущего проекта
+                        path.resolve(__dirname, 'node_modules/@dberezin10'), // Включаем обработку файлов из пакета @dberezin10
+                    ],
                     use: {
                         loader: 'ts-loader',
                         options: {
